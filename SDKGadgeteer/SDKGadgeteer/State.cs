@@ -69,6 +69,7 @@ namespace SDKGadgeteer
             {
                 _Timer.Tick -= _timer_Tick;
                 _Timer.Stop();
+                _Timer = null;
 
                 _MainHandle.Joystick.JoystickPressed -= JoystickPressed;
                 _MainHandle.Joystick.JoystickReleased -= JoystickReleased;

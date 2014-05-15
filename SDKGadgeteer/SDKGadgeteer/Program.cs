@@ -32,7 +32,7 @@ namespace SDKGadgeteer
 
         public Gadgeteer.Modules.GHIElectronics.Button ButtonRight
         {
-            get { return buttonRight; }
+            get { return buttonRight ; }
         }
         public Gadgeteer.Modules.GHIElectronics.Button ButtonLeft
         {

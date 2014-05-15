@@ -14,7 +14,7 @@ namespace ConsoleStateMachine
         public override void Entry()
         {
             ConsoleDisplayN18.Clear();
-            ConsoleDisplayN18.WriteLine("Demo Start");
+            ConsoleDisplayN18.WriteLine("Chronomètre");
             Thread.Sleep(1000);
             Program.Context.CurrentState = new MenuState();
         }

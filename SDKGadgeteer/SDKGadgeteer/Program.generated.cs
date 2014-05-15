@@ -19,10 +19,10 @@ namespace SDKGadgeteer {
         private Gadgeteer.Modules.GHIElectronics.BreadBoard_X1 breadBoard_X1;
         
         /// <summary>The Button module using socket 5 of the mainboard.</summary>
-        private Gadgeteer.Modules.GHIElectronics.Button buttonRight;
+        private Gadgeteer.Modules.GHIElectronics.Button buttonLeft;
         
         /// <summary>The Button module using socket 2 of the mainboard.</summary>
-        private Gadgeteer.Modules.GHIElectronics.Button buttonLeft;
+        private Gadgeteer.Modules.GHIElectronics.Button buttonRight;
         
         /// <summary>The Display N18 module using socket 6 of the mainboard.</summary>
         private Gadgeteer.Modules.GHIElectronics.Display_N18 display_N18;
@@ -68,8 +68,8 @@ namespace SDKGadgeteer {
         
         private void InitializeModules() {
             Microsoft.SPOT.Debug.Print("The module \'breadBoard_X1\' was not connected in the designer and will be null.");
-            this.buttonRight = new GTM.GHIElectronics.Button(5);
-            this.buttonLeft = new GTM.GHIElectronics.Button(2);
+            this.buttonLeft = new GTM.GHIElectronics.Button(5);
+            this.buttonRight = new GTM.GHIElectronics.Button(2);
             this.display_N18 = new GTM.GHIElectronics.Display_N18(6);
             this.joystick = new GTM.GHIElectronics.Joystick(4);
             Microsoft.SPOT.Debug.Print("The module \'led_Strip\' was not connected in the designer and will be null.");

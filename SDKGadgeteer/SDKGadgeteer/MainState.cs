@@ -32,8 +32,6 @@ namespace SDKGadgeteer
 
             if (MainHandle.LED_Strip == null)
                 _menu.Lines[5] += disconnect;
-
-            _menu.Draw();
         }
 
         private void SelectState(int menuItem)
@@ -80,6 +78,8 @@ namespace SDKGadgeteer
         
         public override void Entry()
         {
+            _menu.CursorLine = 0;
+            _menu.Draw();
             StartListen();
         }
 

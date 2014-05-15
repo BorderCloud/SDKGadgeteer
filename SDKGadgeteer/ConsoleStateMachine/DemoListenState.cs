@@ -41,7 +41,7 @@ namespace ConsoleStateMachine
             ConsoleDisplayN18.WriteLine(_message);
         }
 
-        public override void ButtonLeftPressed()
+       public override void ButtonLeftPressed()
         {
             _message = "ButtonLeftPressed\n(key1+Enter)\n";
             Do();
